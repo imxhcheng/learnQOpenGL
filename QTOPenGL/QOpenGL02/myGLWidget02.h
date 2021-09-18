@@ -9,6 +9,7 @@
 #include <QOpenGLShaderProgram>
 #include <QOpenGLBuffer>
 #include <QOpenGLVertexArrayObject>
+
 class myGlWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
 	Q_OBJECT
