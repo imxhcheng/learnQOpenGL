@@ -20,6 +20,11 @@ void myOPenglWidget::paintGL()
 	m_Nv12Render.render(m_pNv12Ptr,g_width,g_height);
 }
 
+void myOPenglWidget::resizeEvent(QResizeEvent *e)
+{
+
+}
+
 uchar* myOPenglWidget::readYuv(char* path)
 {
 	FILE *fp;

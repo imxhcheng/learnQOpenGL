@@ -17,6 +17,8 @@ public:
 	void initializeGL(); //调用上面渲染类的初始化函数
 	void paintGL();//调用上面渲染类的渲染函数
 
+	void resizeEvent(QResizeEvent *e);
+
 	uchar* readYuv(char* path);
 
 private:

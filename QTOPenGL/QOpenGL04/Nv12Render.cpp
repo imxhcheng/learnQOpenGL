@@ -28,14 +28,14 @@ void Nv12Render::initialize()
 		"{\n"
 		"vec3 yuv; \n"
 		"vec3 rgb; \n"
-		"yuv.x = texture2D(textureY, textureOut.st).r; \n"
+		"yuv.x = texture2D(textureY, textureOut.st).r-0.0627; \n"
 		"yuv.y = texture2D(textureUV, textureOut.st).r-0.5 ; \n"
 		"yuv.z = texture2D(textureUV, textureOut.st).g-0.5 ; \n"
 		/*"rgb = mat3( 1,       1,         1, \n"
 		"0,       -0.39465,  2.03211, \n"
 		"1.13983, -0.58060,  0) * yuv; \n"*/
 		"rgb = mat3( 1,       1,         1, \n"
-		"0,       -0.3455,	1.779, \n"
+		"0,       -0.3455,	1.772, \n"
 		"1.4075, -0.7169,  0) * yuv; \n"
 		"gl_FragColor = vec4(rgb, 1); \n"
 		"}\n";
